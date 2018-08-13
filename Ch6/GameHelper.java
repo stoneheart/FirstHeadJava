@@ -45,6 +45,7 @@ public class GameHelper {
                 if (grid[location] == 0) {
                     coords[x++] = location;
                     location += incr;
+                    System.out.print(" next " + location);
                     if (location >= gridSize) {
                         success = false;
                     }
