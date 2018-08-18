@@ -12,7 +12,7 @@ class V2Radiator {
 
 class V3Radiator extends V2Radiator {
     V3Radiator(ArrayList<SimUnit> lglist) {
-        //super(lglist);
+        // super(lglist);
         for (int g=0; g<10; g++) {
             lglist.add(new SimUnit("V3Radiator"));
         }
@@ -28,8 +28,13 @@ class RetentionBot {
 public class TestLifeSupportSim {
     public static void main(String[] args) {
         ArrayList<SimUnit> aList = new ArrayList<SimUnit>();
+        System.out.println("Create V2Radiator");
         V2Radiator v2 = new V2Radiator(aList);
+
+        System.out.println("Create V3Radiator");
         V3Radiator v3 = new V3Radiator(aList);
+
+        System.out.println("Create RetentionBot");
         for (int z=0; z<20; z++) {
             RetentionBot ret = new RetentionBot(aList);
         }
