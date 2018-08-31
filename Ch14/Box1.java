@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Box implements Serializable {
+public class Box1 implements Serializable {
     private int width;
     private int height;
 
@@ -13,7 +13,7 @@ public class Box implements Serializable {
     }
 
     public static void main(String[] args) {
-        Box myBox = new Box();
+        Box1 myBox = new Box1();
         myBox.setWidth(50);
         myBox.setHeight(20);
 
